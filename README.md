@@ -1,2 +1,2 @@
-# project-portf-lio
+# project-portfolio
 Criando um portfólio básico e dinâmico
