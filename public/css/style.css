@@ -1,0 +1,153 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+    --font_family: firecode, monospace;
+    --font_color_1: #ffffff;
+    --font_color_2: #70C8FF;
+    --background_image: url('../img/bg-mobile.jpg');
+}
+
+/* Estilos do corpo */
+body {
+    display: grid;
+    background-image: var(--background_image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font_family);
+    color: var(--font_color_1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    gap: 20px;
+}
+
+/* Estilos da apresentação */
+.apresentacao {
+    padding: 10px;
+}
+
+/* Estilos do texto apresentação */
+h1 {
+    color: var(--font_color_1);
+    font-size: 40px;
+}
+
+span {
+    color: var(--font_color_2);
+}
+
+/* Estilos da linha */
+.line {
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilos das redes sociais */
+.social-media  {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-media .item_icon a img {
+    width: 40px;
+    filter: invert(1);
+    margin: 0px 9px;
+}
+
+.social-media .item_icon a img:hover {
+    filter: invert(0.8);
+    transition: 0.3s;
+}
+
+/* Estilos dos botões */
+.btn {
+    color: var(--font_color_1);
+    border: 3px solid var(--font_color_1);
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff00;
+    border-radius: 25px;
+    cursor: pointer;
+    float: initial;
+}
+
+.btn1:hover {
+    background-color: #ffffff15;
+    transition: 0.3s;
+}
+
+/* Estilos do logo */
+.logo_ruby {
+    padding: 10px;
+}
+
+#logo {
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid var(--font_color_1);
+}
+
+/* Estilos dos projetos */
+
+/* Estilos do container dos projetos */
+.container_projetos {
+    margin: 10px;
+}
+
+.container_projetos h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+
+    /* Container */
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos do texto apresentação */
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    /* Estilos da linha */
+    .line {
+        flex-direction: column;
+    }
+
+    /* Estilos da logo */
+    .logo_ruby:last-child {
+        order: -1;
+    }
+
+    .logo_ruby #logo {
+        width: 100px;
+    }
+
+    /* Estilos do projetos */
+
+}
+
+
